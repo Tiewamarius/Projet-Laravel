@@ -1,0 +1,175 @@
+body {
+    font-family: 'Nunito', sans-serif;
+    background-image: url('/images/register.jpg');
+    background-size: cover;  /*Ajustez selon vos besoins 
+    background-position: center; /* Ajustez selon vos besoins */
+    background-repeat: no-repeat;
+    
+}*/
+
+
+h2{
+    position:absolute;color:rgb(43, 42, 42); font-size:25px;
+    top:200px;left:90px;padding-right:45px;
+}
+
+.alertSucc{
+    text-align: center;
+    width: 70%;
+    font-size: 35px;
+    padding: 5px;
+    color: white;
+    background: rgb(9, 241, 9);
+    border-radius: 10px;
+}
+
+.form-box{
+    text-align: center;
+    width: 80%; /* Ajustez la largeur selon vos besoins */
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 16%;
+    padding: 50px;
+    border-top: 2.5px dashed rgb(102, 0, 255);
+    border-left: none;
+    border-right: none;
+    border-bottom: none;
+}
+
+
+.form-box input[type='password']{
+    width: 250px;
+    text-align: center;
+    border-top: none;
+    border-right: none;
+    border-left:none;
+    border-radius: 15px;
+    border-bottom: 1px solid rgb(141, 38, 173);
+    height: 35px;
+    outline: none;
+}
+
+.form-box input[type='email']{
+    width: 250px;
+    text-align: center;
+    border-top: none;
+    border-right: none;
+    border-radius: 15px;
+    border-left:none;
+    border-bottom: 1px solid rgb(141, 38, 173);
+    outline: none;
+    height: 35px;
+    background: white;
+}
+
+.form-box input[type='submit']:hover{
+    width: 150px;
+    border: none;
+    color: white;
+    background-color: rgb(141, 38, 173);
+    border-radius: 0px 10px 10px 0px ;
+    height: 35px;
+    cursor: pointer;
+    
+}
+
+.form-box input[type='submit']{
+    width: 150px;
+    border: none;
+    color: white;
+    background-color: rgb(195, 0, 255);
+    border-radius: 0px 10px 10px 0px ;
+    height: 37px;
+    cursor: pointer;
+    
+}
+
+
+  
+  @media (max-width: 500px) {
+    body {
+        /*font-family: 'Nunito', sans-serif;*/
+        
+        background-image: url('/images/register.jpg');
+
+        background-size: 100% 100%;  /*Ajustez selon vos besoins 
+        background-position: center; /* Ajustez selon vos besoins */
+        background-repeat: no-repeat;
+        
+    }
+        @media (max-width: 500px) {
+  #myDiv {
+    background-image: url(image2.jpg);
+    background-repeat: no-repeat;
+  }
+}
+
+    h2{
+       display: none;
+    }
+    .form-box{
+        text-align: center;
+        width: 80%; /* Ajustez la largeur selon vos besoins */
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 15%;
+        padding: 10px;
+        border-top: 0.5px solid rgb(195, 0, 255);
+        border-left: none;
+        border-right: none;
+        border-bottom: none;
+    }
+
+    .form-box input[type='submit']{
+        width: 110px;
+        border: none;
+        color: white;
+        border: 2px solid white;
+        background-color: rgb(195, 0, 255);
+        border-radius: 10px ;
+        height: 45px;
+        cursor: pointer;
+        box-shadow: 0 1px 3px 0 rgba(0,0,0,.1), 0 1px 2px 0 rgba(0,0,0,.2);
+        
+    }
+
+    .form-box input[type='submit']:hover{
+        
+        width: 110px;
+        border: none;
+        color: white;
+        border: 2px solid white;
+        background-color: rgb(195, 0, 255);
+        border-radius: 10px ;
+        height: 45px;
+        cursor: pointer;
+    }
+    
+    .form-box input[type='password']{
+        width: 110px;
+        text-align: center;
+        border-top: none;
+        border-right: none;
+        border-left:none;
+        text-align: center;
+        border-bottom: 1px solid rgb(141, 38, 173);
+        height: 35px;
+        outline: none;
+        
+
+    }
+    
+    .form-box input[type='email']{
+        width: 110px;
+        text-align: center;
+        border-top: none;
+        border-right: none;
+        border-left:none;
+        text-align: center;
+        border-bottom: 1px solid rgb(141, 38, 173);
+        outline: none;
+        height: 35px;
+        background: white;
+    }
+    }
+  

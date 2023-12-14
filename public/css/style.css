@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body {
+    margin-left: 350px;
+    border-radius: 15px;
+    border:0.5px solid violet;
+    width: 656px;
+    height: 656px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: white;
+}
+.container {
+    position: relative;
+    width: 256px;
+    height: 256px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/*LE CERCLE TOURNANT*/
+.container span {
+    position: absolute;
+    left: 0;
+    width: 32px;
+    height: 6px;
+    background: #fafbfc;
+    border-radius: 8px;
+    transform-origin: 128px;
+    transform: scale(2.2) rotate(calc(var(--i) * (360deg / 50)));
+    animation: animateBlink 3s linear infinite;
+    animation-delay: calc(var(--i) * (3s / 50));
+}
+@keyframes animateBlink {
+    0% {
+        background: rgb(255, 0, 234);
+    }
+    25% {
+        background: #662c61;
+    }
+}
+.login-box {
+    position: absolute;
+    width: 400px;
+}
+.login-box form {
+    width: 100%;
+    padding: 0 50px;
+}
+h2 {
+    font-size: 2em;
+    color: rgb(255, 0, 234);
+    text-align: center;
+}
+.input-box {
+    position: relative;
+    margin: 25px 0;
+}
+.input-box input {
+    width: 100%;
+    height: 50px;
+    background: transparent;
+    border: 1px solid rgb(255, 0, 234);
+    outline: none;
+    border-radius: 40px;
+    font-size: 1em;
+    color: #fff;
+    padding: 0 20px;
+    transition: .5s ease;
+}
+.input-box input:focus,
+.input-box input:valid {
+    border-color: rgb(255, 0, 128);
+}
+.input-box label {
+    position: absolute;
+    top: 50%;
+    left: 20px;
+    transform: translateY(-50%);
+    font-size: 1em;
+    color: #fff;
+    pointer-events: none;
+    transition: .5s ease;
+}
+.input-box input:focus~label,
+.input-box input:valid~label {
+    top: 1px;
+    font-size: .8em;
+    background: #fdfeff;
+    padding: 0 6px;
+    color: rgb(255, 0, 234);
+}
+.forgot-pass {
+    margin: -15px 0 10px;
+    text-align: center;
+}
+.forgot-pass a {
+    font-size: .85em;
+    color: #fff;
+    text-decoration: none;
+}
+.forgot-pass a:hover {
+    text-decoration: underline;
+}
+.btn {
+    width: 100%;
+    height: 45px;
+    background: rgb(255, 0, 234);
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    cursor: pointer;
+    font-size: 1em;
+    color: white;
+    font-weight: 600;
+}
+.signup-link {
+    margin: 20px 0 10px;
+    text-align: center;
+}
+.signup-link a {
+    font-size: 1em;
+    color: rgb(255, 0, 179);
+    text-decoration: none;
+    font-weight: 600;
+}
+.signup-link a:hover {
+    text-decoration: underline;
+}
